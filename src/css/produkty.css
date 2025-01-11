@@ -1,0 +1,200 @@
+/* Zmienna do obsługi szerokości bocznego menu */
+body {
+    --sb-width: 30px;
+}
+  
+body.sb-expanded {
+    --sb-width: 210px;
+}
+
+div#main{
+    text-align: center;
+    padding-top: 2%;
+    z-index: 1;
+    height: 100%;
+    transition: margin-left 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+div#menu{
+    inset: 0 auto 0 0;
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+    background-color: #B3B3B3;
+    width: var(--sb-width);
+    transition: width 0.5s ease-in-out;
+    padding: 10px;
+}
+
+div#menu ul{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: 90%;
+    list-style: none;
+}
+
+div#menu li,
+div#menu p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+ul li p,
+ul li button p,
+ul p, ul li form input,
+ul li form label{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.sb-expanded ul li p,
+.sb-expanded ul li button p,
+.sb-expanded ul p,
+.sb-expanded ul li form input,
+.sb-expanded ul li form label{
+    opacity: 1;
+    visibility: visible;
+}
+
+ul li:last-child{
+    margin-top: auto;
+    bottom: -25%;
+}
+  
+@media (min-width: 768px) {
+    div#main, div#searchbar {
+        margin-left: var(--sb-width);
+        width: calc(100% - var(--sb-width));
+    }
+}
+
+div#footer{
+    position: absolute;
+    bottom: 17%;
+    width: 100%;
+    height: 6%;
+    line-height: 350%;
+    text-align: right;
+}
+
+table{
+    width: 100%;
+}
+
+tr{
+    width: 100%;
+}
+
+td{
+    width: 33%;
+    padding: 2%;
+}
+
+div#main img{
+    height: 200px;
+}
+
+td p{
+    font-size: large;
+    font-weight: bold;
+}
+
+div#main button{
+    background-color: white;
+    font-weight: bold;
+    border-width: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+}
+
+div.product{
+    margin-left: 25%;
+    padding: 50px;
+    width: 50%;
+    box-shadow: 4px 4px 8px 8px rgb(0 0 0 / 40%);
+}
+
+p.price{
+    color: rgb(255, 69, 0);
+}
+
+div#menu button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    width: var(--sb-width);
+    text-align: left;
+    line-height: 10px;
+}
+
+div#menu button i,
+div#menu button p,
+div#searchbar button i,
+div#searchbar button p{
+    display: inline;
+}
+
+div#menu button p{
+    margin-left: 5px;
+}
+
+div#searchbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 5%;
+    z-index: 2;
+    text-align: center;
+    transition: margin-left 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+div#searchbar input{
+    width: 60%;
+}
+
+div#searchbar button{
+    background-color: white;
+    font-weight: bold;
+    border-width: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+}
+
+input {
+    background-color: white;
+    font-weight: bold;
+    border-width: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+}
+
+div#header img{
+    background-color: #07292d;
+}
+
+div#wrapper{
+    width: 100%;
+    max-height: 100px;
+    z-index: 3;
+}
+
+div#searchbar,
+div#menu,
+div#main{
+    display: inline-block;
+}

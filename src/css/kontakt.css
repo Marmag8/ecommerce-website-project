@@ -1,0 +1,30 @@
+div#main{
+    text-align: center;
+    padding-top: 1%;
+}
+
+iframe{
+    width: 600px;
+    height: 450px;
+    border: 5px solid black;
+}
+
+div#footer{
+    width: 100%;
+    text-align: right;
+    bottom: 0;
+    position: fixed;
+}
+
+div#main p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div#main ul{
+    list-style-type: disc;
+}
+
+div#header img{
+    background-color: #07292d;
+}

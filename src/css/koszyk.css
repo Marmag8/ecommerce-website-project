@@ -1,0 +1,60 @@
+div#main{
+    text-align: center;
+    padding-top: 1%;
+}
+
+div#footer{
+    width: 100%;
+    text-align: right;
+    bottom: 0;
+    position: fixed;
+}
+
+tr, th, td{
+    border: 5px black solid;
+}
+
+table{
+    width: 80%;
+    margin-left: 10%;
+}
+
+td, th{
+    width: 15%;
+    padding: 25px;
+    font-size: 16px;
+}
+
+td.buttonTD {
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+button {
+    background-color: white;
+    font-weight: bold;
+    border-width: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+}
+
+div#header img{
+    background-color: #07292d;
+}
+
+button.btn{
+    float: left;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+div#btns{
+    width: 80%;
+    margin-left: 10%;
+}

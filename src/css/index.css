@@ -1,0 +1,108 @@
+body{
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0; 
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+div#main {
+    height: 20%;
+    max-height: 350px;
+    width: 100%;
+}
+
+div#main h1, div#main td {
+    text-align: center;
+}
+
+div#left, div#right{
+    float: left; 
+    display: inline; 
+    width: 50%;
+    height: 500px;
+    padding-top: 3%;
+    margin-bottom: 75px;
+}
+
+div.text {
+    padding: 15px;
+    width: 60%;
+    height: 100%;
+    margin-left: 20%;
+    box-shadow: 4px 4px 8px 8px rgb(0 0 0 / 40%);
+    overflow: hidden;
+}
+
+div#left p, div#right p{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+div#left p, div#right p{
+    padding-bottom: 3%;
+}
+
+div#left h2, div#right h2, div#right h3{
+    padding-left: 20%;
+    text-decoration: underline;
+}
+
+div#scroll{
+    overflow-y: scroll;
+    max-height: 450px;
+}
+
+div#footer{
+    width: 100%;
+    text-align: right;
+    bottom: 0;
+    position: fixed;
+}
+
+div#header img{
+    padding-top: 10px;
+    background-color: #07292d;
+}
+
+table{
+    width: 100%;
+}
+
+tr{
+    width: 100%;
+}
+
+td{
+    width: 33%;
+    padding: 2%;
+}
+
+td p{
+    font-size: large;
+    font-weight: bold;
+}
+
+p.price{
+    color: rgb(255, 69, 0);
+}
+
+div.product{
+    margin-left: 25%;
+    padding: 50px;
+    width: 50%;
+    box-shadow: 4px 4px 8px 8px rgb(0 0 0 / 40%);
+}
+
+img{
+    height: 200px;
+}
