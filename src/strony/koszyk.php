@@ -30,6 +30,7 @@
             $stmt->execute();
             $res = $stmt->get_result();
             $stmt->close();
+            $conn->close();
             if (mysqli_num_rows($res) > 0) {
             print("<table>");
             print("<tr>");
