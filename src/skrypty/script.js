@@ -52,6 +52,7 @@ function remove_from_cart(name) {
     })})
 }
 
+// aplikacja ajax wywołująca skrypt php do czyszczenia koszyka oparta na jQuery
 function clear_cart() {
     $(document).ready(function(){ 
     $.ajax({
