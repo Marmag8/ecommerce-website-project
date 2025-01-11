@@ -1,24 +1,5 @@
 <?php
-    include "conn.php";
-
-    if (isset($_POST['submit'])) {
-        $file = fopen('../logs.txt', 'a'); // otwarcie pliku w trybie append
-
-        try{
-        $query = "DELETE FROM `koszyk`";
-        $stmt = $conn->prepare($query);
-        $stmt->execute();
-        $stmt->close();
-        fwrite($file, "Wyczyszono koszyk" . "\n");
-        }
-
-        catch (Exception $e) {
-            fwrite($file, "BŁĄD: " . $e->getMessage() . "\n");
-            echo "Wystąpił błąd przy usuwaniu: " . $e->getMessage();
-        }
-
-        fclose($file);
-    }
+    require_once "../skrypty/conn.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,11 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koszyk</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="koszyk.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/koszyk.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!--zawarcie bibliotek jQuery w projekcie-->
-    <script src="script.js"></script>
+    <script src="../skrypty/script.js"></script>
 </head>
 <body>
     <div id="header">
@@ -70,9 +51,7 @@
             
             print('</table>
                 <div id="btns">
-                <form action="" method="post">
-                <button type="submit" id="submit" name="submit" class="btn">Wyczyść Koszyk</button>
-                </form>
+                <button class="btn" onclick="clear_cart()">Wyczyść Koszyk</button>
                 <button class="btn">Przejdź do zamówienia</button>
                 </div>');
             }

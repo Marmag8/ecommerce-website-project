@@ -21,7 +21,7 @@ function add_to_cart(name, price) {
 
     $(document).ready(function(){ 
     $.ajax({
-        url: "addToCart.php",
+        url: "../skrypty/addToCart.php",
         type: "POST",
         data: {
             name: name,
@@ -40,11 +40,23 @@ function add_to_cart(name, price) {
 function remove_from_cart(name) {
     $(document).ready(function(){ 
     $.ajax({
-        url: "removeFromCart.php",
+        url: "../skrypty/removeFromCart.php",
         type: "POST",
         data: {
             name: name,
         },
+        success: function() {
+            location.reload();
+            },
+        error: function(error) { console.log(error); }
+    })})
+}
+
+function clear_cart() {
+    $(document).ready(function(){ 
+    $.ajax({
+        url: "../skrypty/clearCart.php",
+        type: "POST",
         success: function() {
             location.reload();
             },

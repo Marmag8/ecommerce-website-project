@@ -1,5 +1,5 @@
 <?php
-    require_once "conn.php";
+    require_once "../skrypty/conn.php";
 
     if (isset($_POST['all'])) {
         $_SESSION['category'] = "";
@@ -37,11 +37,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkty</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="produkty.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/produkty.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!--zawarcie bibliotek jQuery w projekcie-->
-    <script src="script.js"></script>
+    <script src="../skrypty/script.js"></script>
 </head>
 <body>
     <div id="header">
@@ -165,7 +165,7 @@
                 print("<tr>");
                 $i = 1;
                 while ($rows = mysqli_fetch_assoc($res)) {?>
-                    <td><div class="product"><img src="img/<?= $rows['ImageUrl'] ?>">
+                    <td><div class="product"><img src="../../public/<?= $rows['ImageUrl'] ?>">
                     <p><?= $rows['ItemName'] ?></p>
                     <p class="price"><?= $rows['Price'] ?>zł</p><br>
                     <input type="number" name="quantity<?= $rows['ItemName']?>" id="quantity<?= $rows['ItemName']?>" class="quantity" value="1" min="1" max="99">

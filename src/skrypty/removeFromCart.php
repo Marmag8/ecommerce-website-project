@@ -1,7 +1,8 @@
 <?php
-    require_once "conn.php";
+    require_once "../skrypty/conn.php";
+    
     $productName = $_POST['name'];
-    $file = fopen('../logs.txt', 'a'); // otwarcie pliku w trybie append
+    $file = fopen('../../../logs.txt', 'a'); // otwarcie pliku w trybie append
     
     $query = "SELECT * FROM `koszyk` WHERE `ItemName` = ?";
     $stmt = $conn->prepare($query);

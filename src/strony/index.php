@@ -1,5 +1,5 @@
 <?php
-    require_once "conn.php";
+    require_once "../skrypty/conn.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep Internetowy</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -119,7 +119,7 @@
             $i = 1;
             foreach ($data as $e) {
                 print("<td><div class='product'>");
-                print("<img src='img/" . $e[0] . "'>");
+                print("<img src='../../public/" . $e[0] . "'>");
                 print("<p>" . $e[1] . "</p>");
                 print("<p class='price'>" . $e[2] . "zł</p><br>");
                 print("<p><a href='produkty.php'>Przejdź do strony z produktami</a></p></div></td>");
