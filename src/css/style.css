@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
+body{
+    background-color: #0d545c;
+}
+
 .hflex{
     display: flex;
     flex-direction: row;
@@ -50,7 +54,7 @@ div#header a{
 div#header a:hover,
 div#header a:focus,
 div#header a:active {
-background-size: 100% 0.1em;
+    background-size: 100% 0.1em;
 }
 
 div#header i {
@@ -62,12 +66,12 @@ div#banner{
     margin-top: 2.3%;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: #124a50;
+    background-color: #0f3f44;
 }
 
 div#banner h1{
     color: white;
-    background-color: #124a50;
+    background-color: #0f3f44;
 }
 
 /* Style dla powiadomień */

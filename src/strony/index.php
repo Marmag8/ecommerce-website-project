@@ -15,7 +15,7 @@
     <div id="header">
         <p><a href="index.php">O Nas</a></p>
         <p><a href="produkty.php">Produkty</a></p>
-        <p><a href="kontakt.html">Kontakt</p>
+        <p><a href="kontakt.php">Kontakt</p>
         <p><a href="koszyk.php"><i class='bx bx-cart'></i> Koszyk</a></p>
     </div><br>
     <div id="banner">
@@ -119,7 +119,7 @@
             $i = 1;
             foreach ($data as $e) {
                 print("<td><div class='product'>");
-                print("<img src='../../public/" . $e[0] . "'>");
+                print("<img src='../../img/" . $e[0] . "'>");
                 print("<p>" . $e[1] . "</p>");
                 print("<p class='price'>" . $e[2] . "zł</p><br>");
                 print("<p><a href='produkty.php'>Przejdź do strony z produktami</a></p></div></td>");

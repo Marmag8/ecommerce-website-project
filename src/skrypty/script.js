@@ -1,6 +1,9 @@
-function resizeMenu() {
-    document.body.classList.toggle("sb-expanded");
-}
+document.addEventListener("DOMContentLoaded", function() {
+    var btn = document.getElementById("resizeMenuButton");
+    btn.addEventListener("click", function() {
+        document.body.classList.toggle("sb-expanded");
+    });
+});
 
 // funkcja pokazująca powiadomienie
 function showSnackbar(message) {

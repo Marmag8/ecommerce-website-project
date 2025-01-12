@@ -17,11 +17,11 @@
     <div id="header">
         <p><a href="index.php">O Nas</a></p>
         <p><a href="produkty.php">Produkty</a></p>
-        <p><a href="kontakt.html">Kontakt</p>
+        <p><a href="kontakt.php">Kontakt</p>
         <p><a href="koszyk.php"><i class='bx bx-cart'></i> Koszyk</a></p>
     </div><br>
     <div id="banner">
-        <h1>Koszyk</h1>
+        <h1>Zawartość Koszyka</h1>
     </div>
     <div id="main">
         <?php
@@ -29,10 +29,11 @@
             $stmt = $conn->prepare($query);
             $stmt->execute();
             $res = $stmt->get_result();
+            $sum = 0;
             $stmt->close();
             $conn->close();
             if (mysqli_num_rows($res) > 0) {
-            print("<table>");
+            print("<div id='table'><table>");
             print("<tr>");
             print("<th>Lp.</th>");
             print("<th>Produkt</th>");
@@ -45,14 +46,16 @@
                 <td><?= $rows['Quantity']?></td>
                 <td><?= $rows['Price']*$rows['Quantity'] ?>zł</td>
                 <td class="buttonTD">
-                    <button type="submit" onclick="remove_from_cart('<?= $rows['ItemName']?>')">Usuń z Koszyka</button>
+                    <button type="submit" onclick="remove_from_cart('<?= $rows['ItemName']?>')"><i class='bx bx-trash'></i></button>
                 </td>
             </tr> 
-            <?php }
+            <?php $sum += $rows['Price'] * $rows['Quantity'];
+            }
             
-            print('</table>
+            print('</table></div>
                 <div id="btns">
-                <button class="btn" onclick="clear_cart()">Wyczyść Koszyk</button>
+                <h2>Suma: '.$sum.'zł</h2><br>
+                <button class="btn" onclick="clear_cart()">Wyczyść Koszyk</button><br>
                 <button class="btn">Przejdź do zamówienia</button>
                 </div>');
             }
@@ -61,6 +64,6 @@
                 print ("<h1>Brak elementów w koszyku.<br><a href='produkty.php'>Przejdź do strony z produktami</a></h1>");
             }
         ?>
-    </div><br>
+    </div>
 </body>
 </html>

@@ -47,11 +47,11 @@
     <div id="header">
         <p><a href="index.php">O Nas</a></p>
         <p><a href="produkty.php">Produkty</a></p>
-        <p><a href="kontakt.html">Kontakt</a></p>
+        <p><a href="kontakt.php">Kontakt</a></p>
         <p><a href="koszyk.php"><i class='bx bx-cart'></i> Koszyk</a></p>
     </div><br>
     <div id="banner">
-        <h1>
+        <h1 id="categoryHeader">
             <?=ucwords($_SESSION['category']);
             if ($_SESSION['category'] == "") {
             echo("Produkty");
@@ -62,7 +62,7 @@
         <div id="menu">
             <ul>
                 <li>
-                    <button onclick="resizeMenu()">
+                    <button id="resizeMenuButton">
                         <i class='bx bx-menu'></i>
                         <p>Zwiń</p>
                     </button>
@@ -116,7 +116,7 @@
         </div>
         <div id="searchbar">
             <form action="" method="post">
-                <input type="text" name="searchQuery" id="searchQuery" placeholder="Nazwa Produktu">
+                <input type="text" name="searchQuery" id="searchQuery" placeholder="Czego szukasz?">
                 <button type="submit" id="search" name="search">
                     <i class='bx bx-search'></i>
                     <p>Wyszukaj</p>
@@ -160,12 +160,13 @@
                 
                 $stmt->execute();
                 $res = $stmt->get_result();
+                $numRows = mysqli_num_rows($res);
                 $stmt->close();
                 $conn->close();
                 print("<tr>");
                 $i = 1;
                 while ($rows = mysqli_fetch_assoc($res)) {?>
-                    <td><div class="product"><img src="../../public/<?= $rows['ImageUrl'] ?>">
+                    <td><div class="product"><img src="../../img/<?= $rows['ImageUrl'] ?>">
                     <p><?= $rows['ItemName'] ?></p>
                     <p class="price"><?= $rows['Price'] ?>zł</p><br>
                     <input type="number" name="quantity<?= $rows['ItemName']?>" id="quantity<?= $rows['ItemName']?>" class="quantity" value="1" min="1" max="99">
@@ -179,6 +180,13 @@
                     ?>
                 <?php }
             ?>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var numRows = <?= $numRows ?>;
+                    var categoryHeader = document.getElementById("categoryHeader");
+                    categoryHeader.innerHTML += " (" + numRows + " ofert)";
+                });
+            </script>
         </div>
     </div>
 </body>
