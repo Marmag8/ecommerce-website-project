@@ -25,20 +25,20 @@
         <div id="left">
             <div class="text">
                 <h2>O Nas</h2><br>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lorem vitae ullamcorper condimentum. 
-                    Ut felis dui, facilisis vitae urna ut, pulvinar commodo justo. Sed ut mauris eget justo faucibus fringilla. 
-                    Vesti   bulum ac eros mattis, ullamcorper nibh a, lacinia justo. Morbi pretium felis nec augue pellentesque tincidunt. 
-                    Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                    
-                    Aliquam eget augue ut nisi efficitur euismod sit amet eget purus. Proin sit amet ultricies arcu. 
-                    Donec molestie suscipit ante, nec efficitur nulla interdum vitae. Aenean nec libero ipsum. 
-                    Duis semper enim ac quam pellentesque, eu dictum nunc euismod. Pellentesque vehicula, nisi vitae blandit euismod, 
-                    orci dolor hendrerit lacus, in pellentesque ante odio sed felis. Vestibulum ante ipsum primis in faucibus orci luctus 
-                    et ultrices posuere cubilia curae; Nunc sit amet cursus urna. Sed fermentum quis mauris at feugiat. Mauris quis nisl dictum, 
-                    iaculis lacus non, interdum tortor. Suspendisse id pellentesque augue, vel tempor ex. Duis porta mauris et orci consectetur, 
-                    et posuere felis mattis. Etiam efficitur tortor ac volutpat ornare. Quisque cursus a mauris at iaculis. Duis luctus faucibus nulla non lacinia. 
-                </p>
+                <div class="pdiv">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lorem vitae ullamcorper condimentum. 
+                        Ut felis dui, facilisis vitae urna ut, pulvinar commodo justo. Sed ut mauris eget justo faucibus fringilla. 
+                        Vesti   bulum ac eros mattis, ullamcorper nibh a, lacinia justo. Morbi pretium felis nec augue pellentesque tincidunt. 
+                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        
+                        Aliquam eget augue ut nisi efficitur euismod sit amet eget purus. Proin sit amet ultricies arcu. 
+                        Donec molestie suscipit ante, nec efficitur nulla interdum vitae. Aenean nec libero ipsum. 
+                        Duis semper enim ac quam pellentesque, eu dictum nunc euismod. Pellentesque vehicula, nisi vitae blandit euismod, 
+                        orci dolor hendrerit lacus, in pellentesque ante odio sed felis. Vestibulum ante ipsum primis in faucibus orci luctus 
+                        et ultrices posuere cubilia curae; Nunc sit amet cursus urna.
+                    </p>
+                </div>
             </div>
         </div>
         <div id="right">
@@ -50,7 +50,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lorem vitae ullamcorper condimentum. 
                         Ut felis dui, facilisis vitae urna ut, pulvinar commodo justo. Sed ut mauris eget justo faucibus fringilla. 
                         Vestibulum ac eros mattis, ullamcorper nibh a, lacinia justo. Morbi pretium felis nec augue pellentesque tincidunt. 
-                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
                     </p><br>
 
                     <h3>2024/12/20 - Wyprzedaż Świąteczna</h3>
@@ -58,7 +58,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lorem vitae ullamcorper condimentum. 
                         Ut felis dui, facilisis vitae urna ut, pulvinar commodo justo. Sed ut mauris eget justo faucibus fringilla. 
                         Vestibulum ac eros mattis, ullamcorper nibh a, lacinia justo. Morbi pretium felis nec augue pellentesque tincidunt. 
-                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
                     </p><br>
 
                     <h3>2024/11/29 - Czarny Piątek</h3>
@@ -66,7 +66,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lorem vitae ullamcorper condimentum. 
                         Ut felis dui, facilisis vitae urna ut, pulvinar commodo justo. Sed ut mauris eget justo faucibus fringilla. 
                         Vestibulum ac eros mattis, ullamcorper nibh a, lacinia justo. Morbi pretium felis nec augue pellentesque tincidunt. 
-                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
                     </p><br>
 
                     <h3>2024/11/27 - Wyprzedaż Jesienna</h3>
@@ -74,7 +74,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lorem vitae ullamcorper condimentum. 
                         Ut felis dui, facilisis vitae urna ut, pulvinar commodo justo. Sed ut mauris eget justo faucibus fringilla. 
                         Vestibulum ac eros mattis, ullamcorper nibh a, lacinia justo. Morbi pretium felis nec augue pellentesque tincidunt. 
-                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
                     </p><br>
 
                     <h3>2024/11/20 - Nowa Kolekcja Produktów</h3>
@@ -82,7 +82,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lorem vitae ullamcorper condimentum. 
                         Ut felis dui, facilisis vitae urna ut, pulvinar commodo justo. Sed ut mauris eget justo faucibus fringilla. 
                         Vestibulum ac eros mattis, ullamcorper nibh a, lacinia justo. Morbi pretium felis nec augue pellentesque tincidunt. 
-                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
                     </p><br>
 
                     <h3>2024/11/11 - Otwarcie Sklepu</h3>
@@ -90,7 +90,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lorem vitae ullamcorper condimentum. 
                         Ut felis dui, facilisis vitae urna ut, pulvinar commodo justo. Sed ut mauris eget justo faucibus fringilla. 
                         Vestibulum ac eros mattis, ullamcorper nibh a, lacinia justo. Morbi pretium felis nec augue pellentesque tincidunt. 
-                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                        Cras at dolor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
                     </p>
                 </div>
             </div>

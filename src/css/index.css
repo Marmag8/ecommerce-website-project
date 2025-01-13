@@ -39,7 +39,7 @@ div.text {
     margin-left: 20%;
     box-shadow: 4px 4px 8px 8px rgb(0 0 0 / 40%);
     background-color: lightgray;
-    overflow: hidden;
+    
 }
 
 div#left p, div#right p{
@@ -47,6 +47,11 @@ div#left p, div#right p{
     padding-right: 20%;
     text-align: justify;
     text-justify: inter-word;
+}
+
+div.pdiv{
+    overflow: hidden;
+    height: 90%;
 }
 
 div#left p, div#right p{
