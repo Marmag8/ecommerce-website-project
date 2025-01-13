@@ -68,7 +68,7 @@
 
                     <h3>2024/11/20 - Nowa Kolekcja Produktów</h3>
                     <p>
-                        Jesteśmy dumni z naszej nowej kolekcji, która właśnie trafiła do sklepu. Nowoczesne technologie, elegancki design i funkcjonalność – 
+                        Jesteśmy dumni z naszej nowej kolekcji, która właśnie trafiła do sklepu. Nowoczesne technologie, elegancki design i funkcjonalność - 
                         to cechy, które charakteryzują naszą ofertę. Sprawdź, co nowego przygotowaliśmy!
                     </p><br>
 
