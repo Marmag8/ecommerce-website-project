@@ -28,7 +28,7 @@ div#menu{
 }
 
 div#menu ul{
-    margin-top: 70px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -65,11 +65,6 @@ ul li form label{
 ul li:last-child{
     margin-top: auto;
     bottom: 0;
-}
-
-ul li:first-child{
-    top: 0;
-    margin-bottom: 30px;
 }
   
 @media (min-width: 768px) {

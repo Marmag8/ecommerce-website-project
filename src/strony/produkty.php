@@ -30,9 +30,6 @@
         $_SESSION['minPrice'] = 0;
         $_SESSION['maxPrice'] = 9999;
     }
-    if (!isset($_POST['all']) && !isset($_POST['electronics']) && !isset($_POST['school_items']) && !isset($_POST['other']) && !isset($_POST['search']) && !isset($_POST['submit'])) {
-        $_SESSION['category'] = "";
-    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +66,7 @@
                         <i class='bx bx-menu'></i>
                         <p>Zwiń</p>
                     </button>
-                </li>
+                </li><br><br>
                 <li>
                     <form action="" method="post">
                         <button type="submit" id="all" name="all">
@@ -106,9 +103,9 @@
                     <form action="" method="post">
                         <label for="minPrice"><b>Wyszukaj produkty według ceny</b></label><br><br>
                         <label for="minPrice">Minimalna cena (zł):</label>
-                        <input type="number" name="minPrice" id="minPrice" placeholder="Min. Cena" min="0" max="9999" value="0"><br>
+                        <input type="number" name="minPrice" id="minPrice" placeholder="Min. Cena" min="0" max="9999" value="0">
                         <label for="maxPrice">Maksymalna cena (zł):</label>
-                        <input type="number" name="maxPrice" id="maxPrice" placeholder="Max. Cena" min="0" max="9999" value="9999"><br>
+                        <input type="number" name="maxPrice" id="maxPrice" placeholder="Max. Cena" min="0" max="9999" value="9999">
                         <button type="submit" id="submit" name="submit">
                             <i class='bx bx-search'></i>
                             <p>Wyszukaj</p>
